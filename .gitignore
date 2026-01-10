@@ -1,0 +1,86 @@
+# ======================
+# CREDENTIALS & SECRETS
+# ======================
+# Environment files (NEVER commit these)
+.env
+.env.local
+.env.development
+.env.production
+.env*.local
+
+# API keys and secrets
+*.pem
+*.key
+*.cert
+secrets.json
+credentials.json
+config.secret.js
+**/secrets/
+
+# AWS
+.aws/
+aws-credentials
+
+# ======================
+# OS GENERATED FILES
+# ======================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ======================
+# EDITOR/IDE FILES
+# ======================
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains (WebStorm, IntelliJ)
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*.swn
+
+# ======================
+# BUILD & DEPENDENCIES
+# ======================
+node_modules/
+bower_components/
+dist/
+build/
+*.log
+npm-debug.log*
+
+# ======================
+# MISC
+# ======================
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Log files
+logs/
+*.log
+
+# Local config overrides
+local.config.js
