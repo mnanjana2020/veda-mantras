@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse all Vedic mantras in our collection - filter by Veda, Sukta, or deity.">
+    <meta name="keywords" content="Browse Mantras, Vedic Collection, Search Mantras, Filter Vedas">
+    <title>Browse Mantras - Veda Mantras</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="site-title">Veda Mantras</h1>
+        <p class="site-subtitle">Ancient Wisdom, Timeless Teachings</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="browse.html" class="active">Browse</a></li>
+            <li class="has-dropdown">
+                <a href="#">Vedas</a>
+                <ul class="dropdown-menu">
+                    <li><a href="rigveda.html">Rig Veda</a></li>
+                    <li><a href="yajurveda.html">Yajur Veda</a></li>
+                    <li><a href="samaveda.html">Sama Veda</a></li>
+                    <li><a href="atharvaveda.html">Atharva Veda</a></li>
+                </ul>
+            </li>
+            <li><a href="suktas/index.html">Suktas</a></li>
+            <li><a href="input.html">Input</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Browse Header -->
+        <section>
+            <h1>Browse All Mantras</h1>
+
+            <div class="om-symbol">&#x0950;</div>
+
+            <p>
+                Explore our collection of Vedic mantras with translations and analysis.
+                Use the filters below to find mantras by source Veda, Sukta collection, or deity.
+            </p>
+        </section>
+
+        <!-- Filter Section -->
+        <section>
+            <h2>Filter Mantras</h2>
+
+            <div class="filter-bar">
+                <select id="filter-veda">
+                    <option value="all">All Vedas</option>
+                    <option value="rigveda">Rig Veda</option>
+                    <option value="yajurveda">Yajur Veda</option>
+                    <option value="samaveda">Sama Veda</option>
+                    <option value="atharvaveda">Atharva Veda</option>
+                </select>
+
+                <select id="filter-category">
+                    <option value="all">All Categories</option>
+                    <option value="prayer">Prayers</option>
+                    <option value="hymn">Hymns to Deities</option>
+                    <option value="philosophy">Philosophical</option>
+                    <option value="ritual">Ritual Mantras</option>
+                    <option value="healing">Healing</option>
+                    <option value="peace">Peace Mantras</option>
+                </select>
+
+                <select id="filter-deity">
+                    <option value="all">All Deities</option>
+                    <option value="agni">Agni</option>
+                    <option value="indra">Indra</option>
+                    <option value="surya">Surya / Savitr</option>
+                    <option value="ganesha">Ganesha</option>
+                    <option value="rudra">Rudra / Shiva</option>
+                    <option value="vishnu">Vishnu</option>
+                    <option value="prithvi">Prithvi</option>
+                    <option value="universal">Universal / Brahman</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Mantras Grid -->
+        <section>
+            <h2>Mantras Collection</h2>
+
+            <div class="mantra-grid" id="mantra-grid">
+                <!-- Rig Veda Mantras -->
+                <a href="rigveda.html#gayatri" class="mantra-card" data-veda="rigveda" data-category="prayer" data-deity="surya">
+                    <span class="veda-tag">Rig Veda</span>
+                    <h3>&#x0917;&#x093E;&#x092F;&#x0924;&#x094D;&#x0930;&#x0940; &#x092E;&#x0928;&#x094D;&#x0924;&#x094D;&#x0930;</h3>
+                    <h4 style="color: var(--peacock-blue); margin-bottom: 0.5rem;">Gayatri Mantra</h4>
+                    <p>The most sacred Vedic mantra, a prayer to Savitr for illumination of the intellect.</p>
+                    <small style="color: var(--antique-gold);">Mandala 3, Sukta 62, Verse 10</small>
+                </a>
+
+                <a href="rigveda.html#agni" class="mantra-card" data-veda="rigveda" data-category="hymn" data-deity="agni">
+                    <span class="veda-tag">Rig Veda</span>
+                    <h3>&#x0905;&#x0917;&#x094D;&#x0928;&#x093F; &#x0938;&#x094D;&#x0924;&#x0941;&#x0924;&#x093F;</h3>
+                    <h4 style="color: var(--peacock-blue); margin-bottom: 0.5rem;">Hymn to Agni</h4>
+                    <p>The opening verse of the Rig Veda, invocation to the sacred fire as divine messenger.</p>
+                    <small style="color: var(--antique-gold);">Mandala 1, Sukta 1, Verse 1</small>
+                </a>
+
+                <a href="rigveda.html#unity" class="mantra-card" data-veda="rigveda" data-category="philosophy" data-deity="universal">
+                    <span class="veda-tag">Rig Veda</span>
+                    <h3>&#x090F;&#x0915;&#x0924;&#x093E; &#x0938;&#x0942;&#x0915;&#x094D;&#x0924;</h3>
+                    <h4 style="color: var(--peacock-blue); margin-bottom: 0.5rem;">Hymn of Unity</h4>
+                    <p>A profound call for collective harmony and shared purpose in spiritual endeavors.</p>
+                    <small style="color: var(--antique-gold);">Mandala 10, Sukta 191, Verse 4</small>
+                </a>
+
+                <a href="rigveda.html#purusha" class="mantra-card" data-veda="rigveda" data-category="philosophy" data-deity="universal">
+                    <span class="veda-tag">Rig Veda</span>
+                    <h3>&#x092A;&#x0941;&#x0930;&#x0941;&#x0937; &#x0938;&#x0942;&#x0915;&#x094D;&#x0924;</h3>
+                    <h4 style="color: var(--peacock-blue); margin-bottom: 0.5rem;">Purusha Sukta</h4>
+                    <p>The Hymn of the Cosmic Being, describing creation through divine sacrifice.</p>
+                    <small style="color: var(--antique-gold);">Mandala 10, Sukta 90</small>
+                </a>
+
+                <a href="rigveda.html#ganesha" class="mantra-card" data-veda="rigveda" data-category="hymn" data-deity="ganesha">
+                    <span class="veda-tag">Rig Veda</span>
+                    <h3>&#x0917;&#x0923;&#x0947;&#x0936; &#x0938;&#x0942;&#x0915;&#x094D;&#x0924;&#x092E;&#x094D;</h3>
+                    <h4 style="color: var(--peacock-blue); margin-bottom: 0.5rem;">Ganesha Suktam</h4>
+                    <p>Hymn to Lord Ganesha, the remover of obstacles and lord of beginnings.</p>
+                    <small style="color: var(--antique-gold);">Mandala 8, Sukta 81, Verse 9</small>
+                </a>
+
+                <!-- Yajur Veda Mantras -->
+                <a href="yajurveda.html#shanti" class="mantra-card" data-veda="yajurveda" data-category="peace" data-deity="universal">
+                    <span class="veda-tag">Yajur Veda</span>
+                    <h3>&#x0936;&#x093E;&#x0928;&#x094D;&#x0924;&#x093F; &#x092E;&#x0928;&#x094D;&#x0924;&#x094D;&#x0930;</h3>
+                    <h4 style="color: var(--peacock-blue); margin-bottom: 0.5rem;">Shanti Mantra</h4>
+                    <p>Prayer for harmony between teacher and student in spiritual learning.</p>
+                    <small style="color: var(--antique-gold);">Taittiriya Upanishad 2.2.2</small>
+                </a>
+
+                <!-- Sama Veda Mantras -->
+                <a href="samaveda.html#udgitha" class="mantra-card" data-veda="samaveda" data-category="philosophy" data-deity="universal">
+                    <span class="veda-tag">Sama Veda</span>
+                    <h3>&#x0909;&#x0926;&#x094D;&#x0917;&#x0940;&#x0925;</h3>
+                    <h4 style="color: var(--peacock-blue); margin-bottom: 0.5rem;">Udgitha</h4>
+                    <p>The meditation on Om as the essence of all sacred chant.</p>
+                    <small style="color: var(--antique-gold);">Chandogya Upanishad 1.1.1</small>
+                </a>
+
+                <a href="samaveda.html#madhu" class="mantra-card" data-veda="samaveda" data-category="philosophy" data-deity="surya">
+                    <span class="veda-tag">Sama Veda</span>
+                    <h3>&#x092E;&#x0927;&#x0941; &#x0935;&#x093F;&#x0926;&#x094D;&#x092F;&#x093E;</h3>
+                    <h4 style="color: var(--peacock-blue); margin-bottom: 0.5rem;">Madhu Vidya</h4>
+                    <p>The Honey Doctrine - mystical teaching of universal interconnection.</p>
+                    <small style="color: var(--antique-gold);">Chandogya Upanishad 3.1.1</small>
+                </a>
+
+                <!-- Atharva Veda Mantras -->
+                <a href="atharvaveda.html#prithvi" class="mantra-card" data-veda="atharvaveda" data-category="hymn" data-deity="prithvi">
+                    <span class="veda-tag">Atharva Veda</span>
+                    <h3>&#x092A;&#x0943;&#x0925;&#x093F;&#x0935;&#x0940; &#x0938;&#x0942;&#x0915;&#x094D;&#x0924;</h3>
+                    <h4 style="color: var(--peacock-blue); margin-bottom: 0.5rem;">Prithvi Sukta</h4>
+                    <p>One of the world's oldest ecological hymns, dedicated to Mother Earth.</p>
+                    <small style="color: var(--antique-gold);">Book 12, Verse 1</small>
+                </a>
+
+                <a href="atharvaveda.html#healing" class="mantra-card" data-veda="atharvaveda" data-category="healing" data-deity="universal">
+                    <span class="veda-tag">Atharva Veda</span>
+                    <h3>&#x0906;&#x0930;&#x094B;&#x0917;&#x094D;&#x092F; &#x092E;&#x0928;&#x094D;&#x0924;&#x094D;&#x0930;</h3>
+                    <h4 style="color: var(--peacock-blue); margin-bottom: 0.5rem;">Healing Prayer</h4>
+                    <p>Ancient prayer for restoration of health, foundation of Ayurvedic healing.</p>
+                    <small style="color: var(--antique-gold);">Book 2, Verse 29.7</small>
+                </a>
+
+                <a href="atharvaveda.html#shanti-sukta" class="mantra-card" data-veda="atharvaveda" data-category="peace" data-deity="universal">
+                    <span class="veda-tag">Atharva Veda</span>
+                    <h3>&#x0936;&#x093E;&#x0928;&#x094D;&#x0924;&#x093F; &#x0938;&#x0942;&#x0915;&#x094D;&#x0924;</h3>
+                    <h4 style="color: var(--peacock-blue); margin-bottom: 0.5rem;">Shanti Sukta</h4>
+                    <p>Beautiful invocation for peace radiating through all realms of existence.</p>
+                    <small style="color: var(--antique-gold);">Book 19, Verse 9.14</small>
+                </a>
+            </div>
+        </section>
+
+        <!-- Statistics -->
+        <section>
+            <h2>Collection Statistics</h2>
+            <div class="veda-grid">
+                <div class="veda-card" style="cursor: default;">
+                    <div class="sanskrit-name" style="font-size: 2.5rem;">11</div>
+                    <h3>Total Mantras</h3>
+                    <p>Analyzed and documented with translations</p>
+                </div>
+                <div class="veda-card" style="cursor: default;">
+                    <div class="sanskrit-name" style="font-size: 2.5rem;">4</div>
+                    <h3>Vedas Covered</h3>
+                    <p>Rig, Yajur, Sama, and Atharva Vedas</p>
+                </div>
+                <div class="veda-card" style="cursor: default;">
+                    <div class="sanskrit-name" style="font-size: 2.5rem;">6</div>
+                    <h3>Sukta Collections</h3>
+                    <p>Organized hymn collections</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider">&#10086; &#10087; &#10086;</div>
+
+    </main>
+
+    <footer>
+        <div class="om-footer">&#x0950;</div>
+        <p>Veda Mantras &copy; 2024</p>
+        <p>Preserving Ancient Wisdom for Future Generations</p>
+    </footer>
+
+    <script>
+        // Filter functionality
+        const filterVeda = document.getElementById('filter-veda');
+        const filterCategory = document.getElementById('filter-category');
+        const filterDeity = document.getElementById('filter-deity');
+        const mantraCards = document.querySelectorAll('.mantra-card');
+
+        function filterMantras() {
+            const vedaValue = filterVeda.value;
+            const categoryValue = filterCategory.value;
+            const deityValue = filterDeity.value;
+
+            mantraCards.forEach(card => {
+                const matchesVeda = vedaValue === 'all' || card.dataset.veda === vedaValue;
+                const matchesCategory = categoryValue === 'all' || card.dataset.category === categoryValue;
+                const matchesDeity = deityValue === 'all' || card.dataset.deity === deityValue;
+
+                if (matchesVeda && matchesCategory && matchesDeity) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        filterVeda.addEventListener('change', filterMantras);
+        filterCategory.addEventListener('change', filterMantras);
+        filterDeity.addEventListener('change', filterMantras);
+    </script>
+</body>
+</html>

@@ -411,3 +411,547 @@ footer .om-footer {
         border: 1px solid #ccc;
     }
 }
+
+/* ============================================
+   ENHANCED MANTRA DISPLAY STYLES (Phase 2)
+   ============================================ */
+
+/* Import Kannada font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@400;500;600&display=swap');
+
+/* Mantra Entry Container */
+.mantra-entry {
+    background: var(--ivory);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--sandalwood);
+}
+
+.mantra-entry header {
+    background: transparent;
+    color: var(--temple-brown);
+    padding: 0 0 1.5rem 0;
+    text-align: left;
+    border-bottom: 2px solid var(--antique-gold);
+    margin-bottom: 1.5rem;
+}
+
+.mantra-entry header::before,
+.mantra-entry header::after {
+    display: none;
+}
+
+.mantra-entry header h2 {
+    font-family: 'Tiro Devanagari Sanskrit', 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    color: var(--maroon);
+    border-left: none;
+    padding-left: 0;
+    margin-bottom: 0.5rem;
+}
+
+.mantra-entry .source {
+    font-size: 0.95rem;
+    color: var(--peacock-blue);
+    margin-bottom: 0.5rem;
+}
+
+.mantra-entry .description {
+    font-style: italic;
+    color: var(--temple-brown);
+    opacity: 0.85;
+}
+
+/* Multi-Language Mantra Text Section */
+.mantra-text {
+    margin: 1.5rem 0;
+}
+
+.mantra-text h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--maroon);
+}
+
+.script {
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 2.2;
+}
+
+.script h4 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    opacity: 0.7;
+}
+
+.script.kannada {
+    font-family: 'Noto Sans Kannada', sans-serif;
+    font-size: 1.3rem;
+    background: linear-gradient(135deg, rgba(0, 100, 0, 0.08), rgba(0, 100, 0, 0.03));
+    border: 1px solid rgba(0, 100, 0, 0.2);
+    color: var(--deep-green);
+}
+
+.script.kannada h4 {
+    color: var(--deep-green);
+}
+
+.script.devanagari {
+    font-family: 'Tiro Devanagari Sanskrit', serif;
+    font-size: 1.4rem;
+    background: linear-gradient(135deg, rgba(139, 0, 0, 0.08), rgba(139, 0, 0, 0.03));
+    border: 1px solid rgba(139, 0, 0, 0.2);
+    color: var(--deep-red);
+}
+
+.script.devanagari h4 {
+    color: var(--deep-red);
+}
+
+.script.transliteration {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    background: linear-gradient(135deg, rgba(0, 95, 106, 0.08), rgba(0, 95, 106, 0.03));
+    border: 1px solid rgba(0, 95, 106, 0.2);
+    color: var(--peacock-blue);
+}
+
+.script.transliteration h4 {
+    color: var(--peacock-blue);
+    font-style: normal;
+}
+
+/* Word-by-Word Analysis Table */
+.word-analysis {
+    margin: 2rem 0;
+}
+
+.word-analysis h3 {
+    margin-bottom: 1rem;
+    color: var(--maroon);
+}
+
+.analysis-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+}
+
+.analysis-table thead {
+    background: linear-gradient(135deg, var(--temple-brown), var(--maroon));
+    color: var(--cream);
+}
+
+.analysis-table th {
+    padding: 1rem;
+    text-align: left;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.analysis-table td {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid var(--sandalwood);
+    vertical-align: top;
+}
+
+.analysis-table tbody tr:nth-child(even) {
+    background: rgba(244, 228, 193, 0.3);
+}
+
+.analysis-table tbody tr:hover {
+    background: rgba(255, 153, 51, 0.1);
+}
+
+.analysis-table td:first-child {
+    font-family: 'Tiro Devanagari Sanskrit', serif;
+    font-size: 1.1rem;
+    color: var(--deep-red);
+    font-weight: 500;
+}
+
+.analysis-table td:nth-child(2) {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--peacock-blue);
+}
+
+.analysis-table td:last-child {
+    color: var(--temple-brown);
+}
+
+/* Translations Section */
+.translations {
+    margin: 2rem 0;
+}
+
+.translations h3 {
+    margin-bottom: 1rem;
+    color: var(--maroon);
+}
+
+.translation {
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+}
+
+.translation h4 {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid currentColor;
+    opacity: 0.7;
+}
+
+.translation.english {
+    background: linear-gradient(135deg, rgba(0, 95, 106, 0.08), rgba(0, 95, 106, 0.03));
+    border-left: 4px solid var(--peacock-blue);
+    color: var(--peacock-blue);
+}
+
+.translation.english p {
+    color: var(--temple-brown);
+    font-style: italic;
+}
+
+.translation.kannada {
+    font-family: 'Noto Sans Kannada', sans-serif;
+    background: linear-gradient(135deg, rgba(0, 100, 0, 0.08), rgba(0, 100, 0, 0.03));
+    border-left: 4px solid var(--deep-green);
+    color: var(--deep-green);
+}
+
+.translation.kannada p {
+    color: var(--temple-brown);
+    font-size: 1.05rem;
+    line-height: 2;
+}
+
+/* Meaning Section (Simple + Deep) */
+.meaning {
+    margin: 2rem 0;
+}
+
+.meaning h3 {
+    margin-bottom: 1rem;
+    color: var(--maroon);
+}
+
+.meaning .simple,
+.meaning .deep {
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+}
+
+.meaning .simple {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.05));
+    border-left: 4px solid var(--gold);
+}
+
+.meaning .simple h4 {
+    color: var(--deep-saffron);
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.meaning .simple p {
+    color: var(--temple-brown);
+}
+
+.meaning .deep {
+    background: linear-gradient(135deg, rgba(128, 0, 0, 0.08), rgba(128, 0, 0, 0.03));
+    border-left: 4px solid var(--maroon);
+}
+
+.meaning .deep h4 {
+    color: var(--maroon);
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.meaning .deep p {
+    color: var(--temple-brown);
+    line-height: 1.9;
+}
+
+/* Commentary Section */
+.commentary {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: var(--cream);
+    border-radius: 8px;
+    border: 1px solid var(--sandalwood);
+}
+
+.commentary h3 {
+    margin-bottom: 1rem;
+    color: var(--maroon);
+}
+
+.commentary p {
+    color: var(--temple-brown);
+    line-height: 1.9;
+}
+
+/* ============================================
+   DROPDOWN NAVIGATION STYLES
+   ============================================ */
+
+nav ul li {
+    position: relative;
+}
+
+nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--temple-brown);
+    min-width: 180px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 0 0 8px 8px;
+}
+
+nav .dropdown-menu li {
+    width: 100%;
+}
+
+nav .dropdown-menu a {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav .dropdown-menu a:hover {
+    background: var(--saffron);
+    color: var(--temple-brown);
+}
+
+nav li:hover .dropdown-menu {
+    display: block;
+}
+
+nav .has-dropdown > a::after {
+    content: ' \25BC';
+    font-size: 0.7rem;
+    margin-left: 5px;
+}
+
+/* ============================================
+   INPUT FORM STYLES
+   ============================================ */
+
+.input-form {
+    background: var(--ivory);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--maroon);
+    margin-bottom: 0.5rem;
+}
+
+.form-group input[type="text"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1rem;
+    border: 2px solid var(--sandalwood);
+    border-radius: 8px;
+    background: var(--cream);
+    color: var(--temple-brown);
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--saffron);
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+    line-height: 1.8;
+}
+
+.form-group textarea.devanagari-input {
+    font-family: 'Tiro Devanagari Sanskrit', serif;
+    font-size: 1.2rem;
+}
+
+.form-group textarea.kannada-input {
+    font-family: 'Noto Sans Kannada', sans-serif;
+    font-size: 1.1rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--saffron), var(--deep-saffron));
+    color: var(--temple-brown);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--deep-saffron), var(--saffron));
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 153, 51, 0.4);
+}
+
+.btn-secondary {
+    background: var(--temple-brown);
+    color: var(--cream);
+}
+
+.btn-secondary:hover {
+    background: var(--maroon);
+}
+
+/* ============================================
+   BROWSE PAGE STYLES
+   ============================================ */
+
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: var(--sandalwood);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.filter-bar select {
+    padding: 0.6rem 1rem;
+    font-family: 'Lora', serif;
+    border: 2px solid var(--antique-gold);
+    border-radius: 6px;
+    background: var(--cream);
+    cursor: pointer;
+}
+
+.mantra-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.mantra-card {
+    background: var(--ivory);
+    border-radius: 10px;
+    padding: 1.5rem;
+    border: 1px solid var(--sandalwood);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.mantra-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    border-color: var(--saffron);
+}
+
+.mantra-card h3 {
+    font-family: 'Tiro Devanagari Sanskrit', serif;
+    color: var(--maroon);
+    margin-bottom: 0.5rem;
+}
+
+.mantra-card .veda-tag {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    background: var(--saffron);
+    color: var(--temple-brown);
+    font-size: 0.8rem;
+    border-radius: 4px;
+    margin-bottom: 0.8rem;
+}
+
+.mantra-card p {
+    font-size: 0.95rem;
+    color: var(--temple-brown);
+    opacity: 0.85;
+}
+
+/* ============================================
+   RESPONSIVE ENHANCEMENTS
+   ============================================ */
+
+@media (max-width: 768px) {
+    .mantra-entry {
+        padding: 1.5rem;
+    }
+
+    .script {
+        padding: 1rem;
+        font-size: 1.1rem !important;
+    }
+
+    .analysis-table {
+        font-size: 0.85rem;
+    }
+
+    .analysis-table th,
+    .analysis-table td {
+        padding: 0.6rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    nav .dropdown-menu {
+        position: static;
+        display: none;
+        box-shadow: none;
+    }
+
+    nav li.open .dropdown-menu {
+        display: block;
+    }
+}
